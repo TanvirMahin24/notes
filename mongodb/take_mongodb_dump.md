@@ -9,3 +9,9 @@ Here is the command to take the dump of the MongoDB database. The command will t
 ```bash
 mongodump --uri="mongodb://localhost:27017" --out="/path/to/dump"
 ```
+
+## Using docker
+
+    ```bash
+    docker run --rm -v /path/to/dump:/dump mongo:latest mongodump --uri="mongodb://localhost:27017" --out="/dump"
+    ```
